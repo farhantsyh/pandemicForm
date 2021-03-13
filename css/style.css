@@ -46,6 +46,11 @@ p{
     text-align: center;
     font-size: 40px;
     margin-bottom: -15px;
+    font-family: var(--my-font);
+}
+
+.alert a{
+    opacity: .7;
 }
 
 .container input[type=text], input[type=email]{
