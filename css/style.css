@@ -21,9 +21,14 @@ p{
     text-align: justify;
 }
 
+@media (min-width: 650px){
+    .container {
+        width: 40%;
+    }
+}
+
 .container {
     text-align: center;
-    width: 400px;
     margin: 40px auto;
     display: flex;
     justify-content: center;
@@ -40,11 +45,11 @@ p{
 .container h2 {
     text-align: center;
     font-size: 40px;
-    margin-bottom: -25px;
+    margin-bottom: -15px;
 }
 
 .container input[type=text], input[type=email]{
-    width: 70%;
+    width: 50%;
     height: 30px;
     border: 1px solid #aaa;
     border-radius: 5px;
@@ -72,7 +77,7 @@ p{
 }
 
 .container textarea {
-    width: 70%;
+    width: 50%;
     height: 100px;
     border: 1px solid #aaa;
     border-radius: 5px;
@@ -132,14 +137,21 @@ li:nth-child(3)::marker{
     font-size: 3rem;
 }
 
-@media only screen and (max-device-width: 480px){
+@media (max-width: 350px){
     .container{
-        width: 375px;
+        /* display: grid;
+        grid-template-columns: 200px; */
         margin: auto;
     }
 
-    .container img {
-        width: 50px;
+    body {
+        display: flexbox;
+    }
+    
+    .list{
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
 
     .container h2 {
